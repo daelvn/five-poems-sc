@@ -1,0 +1,97 @@
+:: 1Newblood1 [night]
+<<ctp "1Newblood1">>
+//on this day, 9 years ago...//
+
+<p class="right">i'm scared when i look in the mirror,
+because i do not see myself.
+<<proceed "what kind of monster have i become?">></p>
+<<ctpNext>>
+<<speak "1newblood1a">>
+<<ctpNext>>
+<p class="right">it feels like my body is not mine,
+i don't recognize any of its shapes
+in the dark of the night.
+who am i?</p>
+<<speak "1newblood1b">>
+<<ctpNext>>
+<p class="right">oh, you're the true master of the play,
+you gave me all your help, yet
+your light is even darker than mine.</p>
+<<speak "1newblood1c">>
+<<ctpNext>>
+<<goto "1Newblood2">>
+<</ctp>>
+
+:: 1Newblood2 [night]
+why did the gods give @@.emboss.shudder;wrath@@
+to those that hate violence?
+do they wish to presence my
+divine self-destruction so much?
+
+let me drink your @@.red.italic.smear;blood@@
+and kill me once and for all.
+save me in your dead life.
+
+<<link "my new @@.red.italic.smear;blood@@, my @@.red.italic.smear;blood@@ renewed" "1Newblood3">><</link>>.
+
+:: 1Newblood3 [night]
+<<ctp "1Newblood3">>
+make me of your kind,
+and let me ascend,
+because here the @@.yellow.smear.fade-in-out;stars@@ don't shine at all
+and i can't see myself.
+
+<p class="right"><<proceed "i drink.">></p>
+<<ctpNext>>
+<<speak "1newblood3">>
+<br>
+<<ctpNext>>
+tell them to stop covering my eyes,
+they only want to @@.blur;smother@@ me.
+please, reveal it to me,
+i must be alive for something else.
+
+<<link "i drink more @@.red.italic.smear;blood@@." "1Newblood4">><</link>>
+<</ctp>>
+
+:: 1Newblood4 [night]
+<<ctp "1Newblood4">>
+my new @@.red.italic.smear;blood@@, my @@.red.italic.smear;blood@@ renewed,
+i only want to live
+so i can see the rain again.
+<<proceed "i put my @@.red.bold.italic.double-underline.smear.sway;faith@@ in you.">>
+<<ctpNext>>
+<!-- You are doing very well. Keep drinking. -->
+<<speak "1newblood4">>
+<br>
+<<ctpNext>>
+they are who manipulate me,
+they use me as a window,
+and through it they make me @@.emboss;kneel@@.
+<<proceed "make it stop, please, make it stop.">>
+
+<<ctpNext>>
+they take control of my body
+and with it they <<proceed "control">> me,
+<<ctpNext>>with it they <<proceed "@@.red.italic.smear;hurt@@">> me.
+<<ctpNext>>[[make it stop, please, make it stop.|1Newblood5]]
+<</ctp>>
+
+:: 1Newblood5 [night]
+i know that I am dying,
+you don't need to hide it,
+but I only ask you to save me,
+again, please...
+
+i grab his hand, and i [[keep drinking|1Newblood6]].
+
+:: 1Newblood6 [night]
+hold my hand during
+the last @@.blur.buoy;breath@@ of my life.
+you were born with me and you will go with me.
+
+let me drink your @@.red.italic.smear;blood@@
+so i may go with you,
+my true progenitor.
+
+[[i want to hurt it and i want it to hurt.|Feathers15]]

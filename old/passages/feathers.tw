@@ -1,0 +1,315 @@
+:: feathers.1 [night] {"position":"1100,300","size":"200,200"}
+today i $rumble[plucked] one of my feathers out.
+(click: "plucked")[=($pluck:)\
+three thousand to go.
+one by one.
+each whiter than the last.
+
+(link: "i pluck another.")[
+	($pluck:)
+	(goto: "feathers.2")
+	[[feathers.2]]
+]
+(enchant: "pluck another.", $rumble)
+
+:: feathers.2 [night] {"position":"1325,275","sizing":"100,100"}
+{
+	<!-- generate "routinely" effect -->
+	(set: _routinely to (a: "routinely"))
+	(for: each _i, ...(range: 1, 8)) [
+		(set: _routinely to it + (a: (substring: "routinely", 1, 9 - _i)))
+	]
+	(set: _routinely to it + (a:""))
+}\
+i keep taking them off
+like one removes their clothes.
+(seq-link: ..._routinely), constantly
+(click: "constantly")[=each hurts [[more|feathers.3]] than the last.
+
+:: feathers.3 [night] {"position":"1325,425","sizing":"100,100"}
+i wish my wings were
+made out of wax and sticks
+(click: "wax and sticks")[=so i could burn them off
+in a moment.
+
+(link: "i pluck another feather off.")[
+	($pluck:)
+	(goto: "feathers.4")
+	[[feathers.4]]
+]
+(enchant: "pluck another.", $rumble)
+(enchant: "burn", (text-style: "smear", "buoy")+(transition: "blur")+(color: $c_orange))
+
+:: feathers.4 [night] {"position":"1450,275","sizing":"100,100"}
+i take another out as i am once again
+reminded of the (cycling-link: "mortality", "weakness", "untrascendency") of the body,
+the (cycling-link: "everlasting", "deathless", "eternal") fire of the soul,
+the fragility of the [[heart|feathers.5]].
+
+:: feathers.5 [night] {"position":"1450,425","sizing":"100,100"}
+plucking off every feather
+(click: "plucking off")[=($pluck:)\
+father gave me and rejecting
+His so-holy gift seventeen years late
+like a (text-style:"emboss","fidget")+(text-colour: $c_red)[dog] biting its [[chain|feathers.6]].
+(enchant: "plucking off", $rumble)
+
+:: feathers.6 [night] {"position":"1575,275","sizing":"100,100"}
+there is no holiness for us tonight,
+not (cycling-link: "under the cold city lights", "in the stone parks, where bottles lie on the ground", "in the house where we live")
+
+(click: "in the house where we live")[=there is nothing $holy[holy] waiting for me,
+not under His dead cold stare
+smothering me (link-reveal: "every")[= ($hal_play: "tick")(link-reveal: "passing")[= ($hal_play: "tick")(link-reveal: "minute,")[=($hal_play: "tick")
+like the emptiness of [[space|feathers.7]].
+
+:: feathers.7 [night] {"position":"1575,425","sizing":"100,100"}
+two thousand, nine hundred, ninety seven.
+
+==>
+[["i'm never going to get this done if just the third one makes me weak like this"|feathers.8]]
+
+:: feathers.8 [night] {"position":"1700,275","sizing":"100,100"}
+"how does one stop being an angel?", i say.
+"have you ever seen an angel die before?"
+
+<==
+(click: '"have you ever seen an angel die before?"')[=
+
+($speak: "feathers8a")|feathers8a)[=
+
+==>
+"and what was it like?"
+
+<==
+($speak: "feathers8b")|feathers8b)[=
+
+==>
+"what happened to its body?"
+
+<==
+(link-reveal: "...")[=
+
+[[i keep talking to him.|feathers.9]]
+
+:: feathers.9 [night] {"position":"1700,425","sizing":"100,100"}
+(enchant: "burn", (text-style: "smear", "buoy")+(transition: "blur")+(color: $c_orange))\
+"if i'm not mistaken, an angels body
+can (link-reveal: "burn")[= (dialog: source of (passage: "1enoch66")) immediately
+should they commit a sin,
+if they are (color: $c_red)[[disposable|feathers.10]]."
+
+:: feathers.10 [night] {"position":"1825,275","sizing":"100,100"}
+(link-reveal: '"i\'m a shame of an angel"')[=
+"no chorus below me,
+evicted from $holy[holy] land."
+
+[["i haven't seen father in years"|feathers.11]]
+
+:: feathers.11 [night] {"position":"1825,425","sizing":"100,100"}
+(enchant: ?burn, (text-style: "smear", "buoy")+(transition: "blur")+(color: $c_orange))\
+"why have i not burned?
+where are the consuming flames?
+if water won't wash away the blood
+surely i'll (link-reveal: "|burn>[burn]")[= (link-reveal: "any")[= ($hal_play: "tick")(link-reveal: "minute")[= ($hal_play: "tick")(link: "now.\"")[=($hal_play: "tick")(goto: "feathers.12")
+
+:: feathers.12 [night] {"position":"1950,275","sizing":"100,100"}
+"i'm condemning myself to a
+thousand years of (text-style:"emboss","fidget")+(text-colour: $c_red)[hell],
+thousand years of the absence
+of a god, so i must be in (text-style:"emboss","fidget")+(text-colour: $c_red)[hell]"
+
+($speak: "feathers12a")|feathers12a)[=
+
+==>
+"but i am disposable, brother."
+
+<==
+($speak: "feathers12b")|feathers12b)[=
+
+==>
+(link: "i pluck another feather off.")[
+	($pluck:)
+	(goto: "feathers.13")
+	[[feathers.13]]
+]
+
+:: feathers.13 [night] {"position":"1950,425","sizing":"100,100"}
+($speak: "feathers13")[=
+
+==>
+(link: '"no, i can\'t stop."')[="no, i can't stop.
+do you think that when $blood[blood]
+stops flowing once the vessel dies,
+[[something else dies too|feathers.14]]?"
+
+:: feathers.14 [night] {"position":"2075,275","sizing":"100,100"}
+(set: _bloodOptions to (a: "golden", "holy", "home", "dreams"))\
+"what is in our $blood[blood]?
+i think it's (cycling-link: bind $Blood, ..._bloodOptions)"
+
+(link: '"right?"')[={
+(set: _bloodIsNot to (find: _a where _a is not $Blood, ..._bloodOptions))
+}\
+"right? it couldn't possibly be (print: 1st of _bloodIsNot), (print: 2nd of _bloodIsNot) or
+(print: 3rd of _bloodIsNot), nothing of the sorts."
+
+[["i wasn't born an angel."|feathers.15]]
+
+:: feathers.15 [night] {"position":"2075,425","sizing":"100,100"}
+"when you [[turned me|newblood1.1]] into an angel..."
+(if: (history:) contains "newblood1.6")[="it was the happiest moment of
+my futile existence,
+but i was so scared.
+remember?"
+(click: "remember?")[=
+<!-- I do. It's like yesterday to me -->
+($speak: "feathers15")|feathers15)[=
+
+"look at me,
+where is all of that?
+the (cycling-link: "holiness", "purity", "peace")?
+i'm all empty, there is nothing [[holy|feathers.16]]".
+(enchant: "holy", $holy)
+
+:: feathers.16 [night] {"position":"2200,275","sizing":"100,100"}
+every feather i (link-reveal: "pluck")[=($pluck:) makes
+my $blood[blood] just a little bit warmer,
+yet it still leaves me (color: $c_lightblue)[cold],
+and distant, and removed.
+<!-- You're not seeing clearly, brother -->
+($speak: "feathers16")|feathers16)[=
+
+==>
+|choice>[(cycling-link: bind $_light, '"you\'re right"', '"you\'re wrong"')], i{(link: "...")[
+	(set: $Light to it + (cond: $_light contains "right", 5, -10))
+	(replace: ?choice)[(print: $_light)]
+	(if: $_light contains "right")[
+		'm not seeing things clearly.<br>
+		i'm out of my mind.<br><br>
+		[["brother, what is an angel?"|feathers.17]]
+		(move: $_light into __light) <!-- delete temp vars -->
+	](else:)[
+		'm seeing perfectly clear.<br>
+		this was a mistake.<br><br>
+		(link: "i pluck one more.")[
+			($pluck:)
+			(move: $_light into __light) <!-- delete temp vars -->
+			(goto: "feathers.17")
+			[[feathers.17]]
+		]
+	]
+]}
+:: feathers.17 [night] {"position":"2200,425"}
+(align: "==>")["brother, what is an angel?"]
+
+<!-- Well, winged beings -->
+($speak: "feathers17")|feathers17)[=
+
+==>
+"but what do we do?"
+
+<==
+(click: '"but what do we do?"')[=(link-reveal: '...')[=
+
+==>
+"what is my purpose?"
+
+<==
+(click: '"what is my purpose?"')[=(link-reveal: '...')[=
+
+==>
+"do you have a purpose?"
+
+<==
+(click: '"do you have a purpose?"')[=(link-reveal: '...')[=
+
+==>
+[["my wings are so small..."|feathers.18]]
+
+:: feathers.18 [night] {"position":"2325,275"}
+"my wings are so small...
+i swear they've never been this small.
+they never change size but
+i just feel so (seq-link: "insignificant", "small", "minuscule")"
+
+(click: "minuscule")[=merely a gear in the system of
+angels, blood and gold,
+that takes me down to earth.
+and what for?
+(click: "and what for?")[=
+
+...
+
+==>
+[["do you think i can be holy still?"|feathers.19]]
+
+:: feathers.19 [night] {"position":"2325,425"}
+(align: "==>")["do you think i can be holy still?"]
+
+<==
+($speak: "feathers19a")|feathers19a)[=
+
+==>
+"really?"
+
+<==
+($speak: "feathers19b")|feathers19b)[=
+
+==>
+{(link: '"i don\'t believe you"')[
+	(set: $Light to it - 5)
+	(goto: "feathers.b20")
+	[[feathers.b20]]
+]}
+{(link: '"i believe you"')[
+	(set: $Light to it + 5)
+	(goto: "feathers.a20")
+	[[feathers.a20]]
+]}
+
+:: feathers.a20 [night] {"position":"2450,350"}
+"i believe you", i said.
+so if holiness is just a chain
+you put on yourself.
+i will make my own holiness,
+i can be $holy[(link: "holy")[(goto: "feathers.a21") [[feathers.a21]] ]].
+
+:: feathers.a21 [night] {"position":"2575,350"}
+i can own my chains.
+i can make them mine.
+i can twist them as i wish,
+and they will be (cycling-link: bind $Chains, "golden", "weightless", "liberating", "holy", "pious"). <!-- you said you wanted your chains to be... -->
+
+==>
+"brother, you are my hope,
+what drives me forward,
+like the sun is to a plant."
+
+<==
+($speak: "feathersA21")|feathersA21)[=
+<!-- TODO will reference the plucked feathers sometime else -->
+i place $Plucked feathers on the table.
+today, i met hope;
+tomorrow, i'll live again,
+and the cycle [[starts anew|End]].
+
+:: feathers.b20 [night] {"position":"2450,500"}
+(align: "==>")[=
+"i don't believe you", i said.
+"i've been fighting father for so long,
+and He has made clear He does not want
+me back at all, so i won't."
+
+(click: "won't")[="i'm sorry brother,
+i'm so so sorry...
+i just want something better for us,
+i want to break our chains."
+
+[["maybe we weren't made for this"|feathers.b21]]
+
+:: feathers.b21 [night] {"position":"2575,500"}
+i place $Plucked feathers on the table.
+today, i met dispair;
+tomorrow, i'll fall again.
+and the cycle [[starts anew|End]]

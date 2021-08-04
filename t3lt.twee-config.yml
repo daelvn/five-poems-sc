@@ -1,0 +1,37 @@
+sugarcube-2:
+  macros:
+    proceed:
+      name: proceed
+      description: A combination of `<<linkappend>>` and `<<ctpAdvance>>`.
+      parameters:
+        - text
+    loadaudio:
+      name: loadaudio
+      description: |-
+        A wrapper around `<<cacheaudio>>` that takes an audio source
+        in shortstring form (such as `a/b`), expands it using a list
+        of sources (`$audio_sources`) and a list of extensions
+        (`$audio_extensions`).
+      parameters:
+        - text
+    pluck:
+      name: pluck
+      description: Plays the `sfx/pluck` sound and increases `$Pluck` by one.
+    speak:
+      name: speak
+      description: Plays a voice effect and waits until it is done to `<<proceed>`.
+      parameters:
+        - text
+    dialog:
+      name: dialog
+      description: Opens a dialogue with a title and the contents of a passage.
+      parameters:
+        - text &+ text
+    type-cursor-off:
+      name: type-cursor-off
+      description: Removes the cursor from a `<<type>>` macro.
+      parameters:
+        - text
+    log:
+      name: log
+      description: Logs everything to the console.

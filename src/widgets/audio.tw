@@ -1,0 +1,57 @@
+:: Audio.Library [widget]
+<<widget "loadaudio">><<silently>>
+  <<set _track    = $args[0]>>
+  <<set _name     = (_track.match(/[^\/]+\/(.+)/i))[1]>>
+  <<set _loadFrom = []>>
+  <<for _extension range $audio_extensions>>
+    <<for _source range $audio_sources>>
+      <<run _loadFrom.push(_source + "/" + _track + _extension)>>
+    <</for>>
+  <</for>>
+  <<run SimpleAudio.tracks.add(_name, _loadFrom)>>
+<</silently>><</widget>>
+<<widget "speak">><<nobr>>
+  <<linkappend "[...]">><<silently>>
+    <<audio $args[0] play>>
+    <<repeat 100ms>>
+      <<set _playing = SimpleAudio.tracks.get($args[0]).isPlaying()>>
+      <<if _playing>>
+        <<run console.log("playing");>>
+      <<else>>
+        <<ctpAdvance `passage()`>>
+        <<stop>>
+      <</if>>
+    <</repeat>>
+  <</silently>><</linkappend>>
+<</nobr>><</widget>>
+
+:: Audio [nobr]
+<<set $audio_sources to ["./data/audio"]>>
+<<set $audio_extensions to [".ogg", ".mp3"]>>
+/* SFX */
+<<set _sfxl = [
+  "sfx/wind",
+  "sfx/pluck",
+  "sfx/tick"
+]>>
+<<for _sfx range _sfxl>>
+  <<loadaudio _sfx>>
+<</for>>
+
+/* Voices */
+<<set _voicel = [
+  "voices/feathers8a",  "voices/feathers8b",
+	"voices/feathers12a", "voices/feathers12b",
+	"voices/feathers13",
+	"voices/feathers15",
+	"voices/feathers16",
+	"voices/feathers17",
+	"voices/feathers19a", "voices/feathers19b",
+	"voices/feathers21A",
+	"voices/1newblood1a", "voices/1newblood1b", "voices/1newblood1c",
+	"voices/1newblood3",
+	"voices/1newblood4"
+]>>
+<<for _voice range _voicel>>
+  <<loadaudio _voice>>
+<</for>>

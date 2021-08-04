@@ -1,0 +1,45 @@
+:: hal.library
+{
+<!-- HAL wrappers -->
+(set: $hal_play to (macro: string-type _track, [
+	(track: _track, "play") (out-data: true)
+]))
+(set: $hal_playWhenPossible to (macro: string-type _track, [
+	(track: _track, "playwhenpossible") (out-data: true)
+]))
+(set: $hal_isPlaying to (macro: string-type _track, [
+	(out-data: (track: _track, "isplaying"))
+]))
+(set: $hal_loop to (macro: string-type _track, bool-type _doLoop, [
+	(track: _track, "loop", _doLoop) (out-data: true)\
+]))
+(set: $hal_new to (macro: string-type _track, ...string-type _sources, [
+	(newtrack: _track, ..._sources) (out-data: true)
+]))
+(set: $hal_preload to (macro: [
+	(masteraudio: "preload") (out-data: true)
+]))
+(set: $hal_stopAll to (macro: [
+	(masteraudio: 'stopall') (out-data: true)
+]))
+(set: $hal_stop to (macro: string-type _track, [
+	(track: _track, "stop") (out-data: true)
+]))
+
+<!-- alt source: "\\wsl.localhost\Ubuntu\home\daelvn\coll\twee\on-angels\data\audio\\" -->
+(set: $hal_sources to (a:
+	"./data/audio"
+))
+(set: $hal_extensions to (a: ".ogg", ".mp3"))
+(set: $hal_load to (macro: string-type _track, [
+	<!-- Split category from sound -->
+	(unpack: _track into (p: (p-many: (p-not: "/")), "/", (p: string)-type _name))
+	<!-- Load -->
+	(set: _loadFrom to (a:)) 
+	(for: each _extension, ...$hal_extensions)[
+		(set: _loadFrom to it + (altered: _source via _source + "/" + _track + _extension, ...$hal_sources))
+	]
+	($hal_new: _name, ..._loadFrom)
+	(out-data: true)
+]))
+}

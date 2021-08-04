@@ -1,0 +1,1 @@
+Config.ui.stowBarInitially = true;

@@ -1,0 +1,20 @@
+:: AsYouAre [bg-vgradient-blue-white]
+<div class="buoy">
+<<type 80ms keep>>and as you are, i stand north of your bed.<</type>>
+
+<<type 80ms element "span" start 2500ms keep>>i lay my halo over you so you can keep warm from the cold world that surrounds you. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>i lay my wings over you so i can protect you from the harm that wrongdoers inflict upon you. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>i keep my eyes on you so that nobody else will touch you ever again. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>i cover you with my robes so you can wipe your tears with them. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>i pull down the stars from the high heavens just so that they can sing for you, and i will put them on your skin. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>i will put them on your skin so you can shine brighter than anyone else. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>whenever someone meets you, they will be blinded by the light you radiate. <</type>>\
+<<type 80ms element "span" start 2500ms keep>>because as you are, you look perfect to me.<</type>>
+
+<<type 80ms element "span" start 2500ms keep>>as you are, i will love you.<</type>>
+<<type 80ms element "span" start 2500ms keep>>as you are, i will inhale your thoughts and exhale your passions.<</type>>
+<<type 80ms element "span" start 2500ms keep>>as you are, i will shine a light on you and keep you safe.<</type>>
+<<type 80ms element "span" start 2500ms keep>>as you are, you are like me.<</type>>
+
+<<type 80ms element "span" start 2500ms keep>>dear heavens, today an angel was born, and [[i miss them already|Come]].<</type>>
+</div>

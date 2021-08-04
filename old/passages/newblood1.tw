@@ -1,0 +1,93 @@
+:: newblood1.1 {"position":"2050,600"}
+**on this day, in 2012...**
+
+i'm scared when i look in the mirror,
+because i do not see myself.
+(link-reveal: "what kind of monster have I become?")[=
+<!-- We are not monsters, brother. -->
+($speak: "newblood11a")|newblood11a)[=
+
+it feels like my body is not mine,
+i don't recognize any of its shapes
+in the dark of the (link-reveal: "night.")[=($night:)
+who am i?
+<!-- Be not afraid. It will be over soon. You're okay, brother. -->
+($speak: "newblood11b")|newblood11b)[=
+
+oh, you're the true master of the play,
+you gave me all your help, yet
+your light is even darker than mine.
+<!-- It's fine. Don't worry about my light. -->
+($speak: "newblood11c")|newblood11c)[=
+(goto: "newblood1.2")
+[[newblood1.2]] 
+
+:: newblood1.2 [night] {"position":"1925,725"}
+why did the gods give (text-style:"emboss","shudder")[wrath]
+to those that hate violence?
+do they wish to presence my
+divine self-destruction so much?
+
+let me drink your blood
+and kill me once and for all.
+save me in your dead life.
+
+[[my new blood, my blood renewed|newblood1.3]]
+(enchant: "blood", $blood)
+
+:: newblood1.3 [night] {"position":"1800,725"}
+make me of your kind,
+and let me ascend,
+because here the (text-style:"smear","fade-in-out")+(color: $c_yellow)[stars] don't shine at all
+and i can't see myself.
+
+\(link: "i drink.")[=\
+<!-- Drink, drink from my palm, swallow the blood. You're doing very good, brother. -->
+($speak: "newblood13")|newblood13)[=
+
+tell them to stop covering my eyes,
+they only want to (text-style:"blur")[smother] me.
+please, reveal it to me,
+i must be alive for something else.
+
+[[i drink more blood.|newblood1.4]]
+(enchant: "blood", $blood)
+
+:: newblood1.4 [night] {"position":"1650,650"}
+(enchant: "blood", $blood)(enchant: "faith", (text-style:"bold","italic","double-underline","smear","sway"))\
+my new blood, my blood renewed,
+i only want to live
+so i can see the rain again.
+(link-reveal: "i put my faith in you.")[=
+<!-- You are doing very well. Keep drinking. -->
+($speak: "newblood14")|newblood14)[=
+
+they are who manipulate me,
+they use me as a window,
+and through it they make me (text-style:"emboss")[kneel].
+(link-reveal: "make it stop, please, make it stop.")[=
+
+they take control of my body
+and with it they control me,
+(click: "control")[=with it they $blood[hurt] me.
+(click: "hurt")[=[[make it stop, please, make it stop.|newblood1.5]]
+
+:: newblood1.5 [night] {"position":"1800,575"}
+i know that I am dying,
+you don't need to hide it,
+but I only ask you to save me,
+again, please...
+
+i grab his hand, and i [[keep drinking|newblood1.6]].
+
+:: newblood1.6 [night] {"position":"1925,575"}
+hold my hand during
+the last (text-style:"blur","buoy")[breath] of my life.
+you were born with me and you will go with me.
+(enchant: "blood", $blood)
+let me drink your blood
+so i may go with you,
+my true progenitor.
+
+[[i want to hurt it and i want it to hurt.|feathers.15]]
+

@@ -1,0 +1,14 @@
+:: PassageHeader [nobr]
+<<silently>>
+  /* Play sfx/wind */
+  <<if passage().match(/Feathers/g)>>
+    <<if not SimpleAudio.tracks.get("wind").isPlaying()>>
+      <<audio "wind" play>>
+      <<audio "wind" loop>>
+    <</if>>
+  <<else>>
+    <<if SimpleAudio.tracks.get("wind").isPlaying()>>
+      <<audio "wind" stop>>
+    <</if>>
+  <</if>>
+<</silently>>
