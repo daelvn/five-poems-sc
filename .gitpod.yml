@@ -6,8 +6,9 @@ vscode:
 tasks:
   - before: |
       source /home/gitpod/lua51/bin/activate
-    init: |
       luarocks install moonscript
       luarocks install alfons
+    init: |
+      echo 'TODO: init app'
     command: |
       echo 'TODO: start app'
