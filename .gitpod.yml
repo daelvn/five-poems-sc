@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - cyrusfirheir.twee3-language-tools
+tasks:
+  - before: |
+      source /home/gitpod/lua51/bin/activate
+    init: |
+      luarocks install moonscript
+      luarocks install alfons
+    command: |
+      echo 'TODO: start app'

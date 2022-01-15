@@ -22,7 +22,7 @@ tasks:
       sh "tweego -o dist/index.html src"
   clean: =>
     fs.delete "dist"
-    fs.delete "/mnt/c/Users/usuario/Desktop/dist" if fs.exists "/mnt/c/Users/usuario/Desktop/dist"
+    --fs.delete "/mnt/c/Users/usuario/Desktop/dist" if fs.exists "/mnt/c/Users/usuario/Desktop/dist"
     --tasks.rmogg!
   dist: =>
     -- create dist folder
