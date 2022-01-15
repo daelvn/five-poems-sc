@@ -1,5 +1,7 @@
 image:
   file: .gitpod.Dockerfile
+ports:
+  - port: 8080
 vscode:
   extensions:
     - cyrusfirheir.twee3-language-tools
