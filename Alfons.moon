@@ -9,7 +9,7 @@ tasks:
   copydata: => sh "rm -r dist/data && cp -r data dist/data"
   server:   =>
     show "Starting http.server..."
-    sh "python3 -m http.server -d dist 2> /dev/null > /dev/null"
+    sh "python3 -m http.server -d dist 8080 2> /dev/null > /dev/null"
   -- test
   test:     => sh "tweego -o /mnt/c/Users/usuario/Desktop/test.html test"
   -- build

@@ -3,9 +3,11 @@
   <<audio "pluck" play>>
   <<set $Plucked += 1>>
 <</silently>><</widget>>
+
 <<widget "type-cursor-off">><<silently>>
   <<removeclass $args[0] "macro-type-cursor">>
 <</silently>><</widget>>
+
 <<widget "log">><<silently>>
   <<run console.log($args.raw)>>
 <</silently>><</widget>>
