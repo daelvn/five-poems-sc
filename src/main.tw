@@ -12,6 +12,8 @@ five poems.
 dáel muñiz.
 
 :: StoryInit [nobr]
+/* Load audio */
+<<include "Audio>>
 
 :: Start [center]
 <h1>five poems.</h1>
