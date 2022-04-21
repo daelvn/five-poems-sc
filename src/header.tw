@@ -42,4 +42,6 @@
   <<if visited("Untitled2")>>
     <<set $Found += 0.5>>
   <</if>>
+  
+  /* Play background audio */
 <</silently>>
