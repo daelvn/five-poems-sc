@@ -44,4 +44,8 @@
   <</if>>
   
   /* Play background audio */
+  <<if not SimpleAudio.tracks.get("city").isPlaying()>>
+      <<audio "city" play>>
+      <<audio "city" loop>>
+    <</if>>
 <</silently>>
