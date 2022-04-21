@@ -1,14 +1,45 @@
 :: PassageHeader [nobr]
 <<silently>>
-  /* Play sfx/wind */
-  <<if passage().match(/Feathers/g)>>
-    <<if not SimpleAudio.tracks.get("wind").isPlaying()>>
-      <<audio "wind" play>>
-      <<audio "wind" loop>>
-    <</if>>
-  <<else>>
-    <<if SimpleAudio.tracks.get("wind").isPlaying()>>
-      <<audio "wind" stop>>
-    <</if>>
+  /* Count passages */
+  <<set $Found = 0>>
+  <<if visited("Scents1")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  <<if visited("Scents2")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  
+  <<if visited("Cities1")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  <<if visited("Cities2")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  
+  <<if visited("Lost1")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  <<if visited("Lost2")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  
+  <<if visited("After1")>>
+    <<set $Found += 0.25>>
+  <</if>>
+  <<if visited("After2")>>
+    <<set $Found += 0.25>>
+  <</if>>
+  <<if visited("After3")>>
+    <<set $Found += 0.25>>
+  <</if>>
+  <<if visited("After4")>>
+    <<set $Found += 0.25>>
+  <</if>>
+  
+  <<if visited("Untitled1")>>
+    <<set $Found += 0.5>>
+  <</if>>
+  <<if visited("Untitled2")>>
+    <<set $Found += 0.5>>
   <</if>>
 <</silently>>
