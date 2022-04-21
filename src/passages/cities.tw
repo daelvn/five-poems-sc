@@ -1,0 +1,29 @@
+:: Cities1
+When I turn a corner it is impossible to know
+which city am I truly in.
+Streets upon streets and streets intertwines
+in a complex grid formation.
+
+Giant buildings, those in red bricks,
+green and blue awnings, indistinguishable,
+the panorama of any Spanish city.
+
+[[(Back to start.)|Start]]
+<<link "=>" "Cities2">><</link>>
+
+:: Cities2
+Cities in which one corner is a portal
+to a completely different city,
+but also exactly the same.
+
+In which [[scents change|Scents1]],
+completely unexpected smells,
+in a fact that is sustained.
+
+They are cities to be confused between them,
+that could be Murcia or could be Madrid,
+they could be all of them or none of them,
+because none looks like all of them
+and all look like none of them.
+
+[[(Back to start.)|Start]]
