@@ -1,9 +1,0 @@
-:: Dialog.Library [widget]
-<<widget "dialog">><<silently>>
-  <<set _title = $args[0]>>
-  <<set _contentFrom = $args[1]>>
-  <<set _content = Story.get(_contentFrom).text>>
-  <<run Dialog.setup(_title)>>
-  <<run Dialog.wiki(_content)>>
-  <<run Dialog.open()>>
-<</silently>><</widget>>

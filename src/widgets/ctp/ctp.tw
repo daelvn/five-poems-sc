@@ -1,4 +1,0 @@
-:: CTP.Library [widget]
-<<widget "proceed">><<nobr>>
-  <<linkappend $args[0]>><<ctpAdvance `passage()`>><</linkappend>>
-<</nobr>><</widget>>
