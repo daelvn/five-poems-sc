@@ -1,5 +1,5 @@
 :: Scents1
-<<type 50ms keep>>Walking through the streets [[of any city map|Cities1]],
+<<type 30ms keep>>Walking through the streets [[of any city map|Cities1]],
 I smell unexpected <<cycle "__">><<optionsfrom ["odors", "perfumes", "fragrances", "scents"]>><</cycle>> in every corner, every street.
 This morning, the wind warns me of the upcoming
 arrival of the summer to this half of the planet.
@@ -11,7 +11,7 @@ even if there is no sea in miles nearby.<</type>>
 
 :: Scents2
 
-<<type 50ms keep>>However, turning the corner, the odors
+<<type 30ms keep>>However, turning the corner, the odors
 make me [[get lost in other realities|Lost1]].
 One street gives up the smell of fried fish in a bar.
 The next, the smell of compost. God knows why.
