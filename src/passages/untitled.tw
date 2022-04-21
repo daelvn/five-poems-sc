@@ -1,13 +1,13 @@
 :: Untitled1
-I want to stop seeing.
-I want to stop listening.
+<<type 80ms keep>>I want to stop seeing.<</type>>
+<<type 80ms start 2500ms keep>>I want to stop listening.<</type>>
 
-¿How do I stop creating when I see?
+<<type 80ms start 2500ms keep>>¿How do I stop creating when I see?
 If I open my eyes, I see art in everything,
 and immediately I begin to create.
 Reality transfigurates in my mind
 by force, the goddamned spirit
-that sneaks into everything outside of me.
+that sneaks into everything outside of me.<</type>>
 
 [[(Back to start.)|Start]]
 <<link "=>" "Untitled2">><</link>>
