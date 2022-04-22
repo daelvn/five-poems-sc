@@ -35,3 +35,4 @@ jobs:
           ITCH_GAME: five-poems
           ITCH_USER: actuallydael
           PACKAGE: dist
+          VERSION_FILE: version.txt
