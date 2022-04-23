@@ -1,12 +1,6 @@
 name: Publish
 
-on:
-  workflow_dispatch:
-    inputs:
-      channel:
-        description: 'Publishing channel'
-        required: true
-        default: 'web'
+on: workflow_dispatch
       
 jobs:
   build:
@@ -35,7 +29,7 @@ jobs:
       - uses: josephbmanley/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
-          CHANNEL: '${{ github.events.inputs.channel }}-auto'
+          CHANNEL: 'web-auto'
           ITCH_GAME: five-poems
           ITCH_USER: actuallydael
           PACKAGE: dist
